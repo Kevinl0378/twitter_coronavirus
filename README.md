@@ -60,7 +60,7 @@ outputs:
 
 **Alternative Reduce:**
 
-I also created a file called `alternative_reduce.py`, which takes in a list of hashtags and creates a line on a line graph for each hashtag. This file can be thought of as a combined version of the `reduce.py` and `visualize.py` files, as it looks through the data in the `outputs` folder, determines the number of times a particular hashtag was used on each day, and performs visualizations on its findings. The line graph can be utilized to track the usage of a particular hashtag (or a group of hashtags) throughout 2020. Here are some examples:
+I also created a file called `alternative_reduce.py`, which takes in a list of hashtags and creates a line on a line graph for each hashtag. This file can be thought of as a combined version of the `reduce.py` and `visualize.py` files, as it looks through the data in the `outputs` folder, determines the number of times a particular hashtag was used on each day, and performs visualizations on its findings. The line graph can be utilized to track the usage of a particular hashtag (or a group of hashtags) throughout 2020. Here are some interesting examples:
 
 The following command:
 ```
@@ -70,3 +70,21 @@ outputs:
 
 ### Number of Tweets Containing Either #coronavirus, #covid19, #flu, or #doctor Throughout 2020
 <img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23coronavirus_%23covid19_%23flu_%23doctor_line_graph.png />
+
+The following command:
+``` 
+$ ./src/alternative_reduce.py --input_hashtags '#cough' '#sneeze'
+```
+outputs:
+
+### Usage of #cough vs. #sneeze Throughout 2020
+<img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23cough_vs_%23sneeze_line_graph.png />
+
+The following command:
+```
+$ ./src/alternative_reduce.py --input_hashtags '#coronavirus' '#covid19' '#covid-19' '#covid2019' '#covid-2019'
+```
+outputs:
+
+### Number of Tweets Containing Different Versions of #coronavirus Throughout 2020
+<img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/different_versions_of_%23covid19_line_graph.png />
