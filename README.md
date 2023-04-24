@@ -46,17 +46,27 @@ $ ./src/visualize.py --input_path=reduced.lang --key='#코로나바이러스'
 ```
 outputs:
 
-### Number of Tweets Containing #코로나바이러스 (Top 10 Languages)
+### Number of Tweets Containing #코로나바이러스 (Top 9* Languages)
 <img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23코로나바이러스_bar_graph_(language).png />
 
 The following command:
 ```
 $ ./src/visualize.py --input_path=reduced.country --key='#코로나바이러스'
 ```
+outputs:
 
 ### Number of Tweets Containing #코로나바이러스 (Top 10 Countries)
 <img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23코로나바이러스_bar_graph_(country).png />
 
 **Alternative Reduce:**
 
-I also created a file called `alternative_reduce.py`, which takes in a list of hashtags and creates a line on a line graph for each hashtag. This file can be thought of as a combined version of the `reduce.py` and `visualize.py` files, as it looks through the data in the `outputs` folder, determines the number of times a particular hashtag was used on each day, and performs visualizations on its findings. The line graph can be utilized to track the usage of a particular hashtag (or a group of hashtags) throughout 2020.
+I also created a file called `alternative_reduce.py`, which takes in a list of hashtags and creates a line on a line graph for each hashtag. This file can be thought of as a combined version of the `reduce.py` and `visualize.py` files, as it looks through the data in the `outputs` folder, determines the number of times a particular hashtag was used on each day, and performs visualizations on its findings. The line graph can be utilized to track the usage of a particular hashtag (or a group of hashtags) throughout 2020. Here are some examples:
+
+The following command:
+```
+$ ./src/alternative_reduce.py --input_hashtags '#coronavirus' '#covid19' '#flu' '#doctor'
+```
+outputs:
+
+### Number of Tweets Containing Either #coronavirus, #covid19, #flu, or #doctor Throughout 2020
+<img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23coronavirus_%23covid19_%23flu_%23doctor_line_graph.png />
