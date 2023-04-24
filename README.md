@@ -14,7 +14,7 @@ The `map.py` file takes in a zip file for an individual day and counts the numbe
 
 **Reduce:**
 
-The output of the map.py file is stored in the `outputs` folder, which contains a file for each day of the year. Once it has run on all files, the `reduce.py` file is used to combine all of the files in the `outputs` folder into a single file, which is either called `reduced.lang` or `reduced.country` (depending on whether language or country was the input parameter). This file contains the total number of times each hashtag was used in 2020.
+The output of the `map.py` file is stored in the `outputs` folder, which contains a file for each day of the year. Once it has run on all files, the `reduce.py` file is used to combine all of the files in the `outputs` folder into a single file, which is either called `reduced.lang` or `reduced.country` (depending on whether language or country was the input parameter). This file contains the total number of times each hashtag was used in 2020.
 
 **Visualize:**
 
