@@ -19,7 +19,7 @@ The output of the map.py file is stored in the `outputs` folder, which contains 
 **Visualize:**
 
 Once the data has been consolidated into a single file, I was able to perform data visualizations using the `matplotlib` library. The `visualize.py` file takes in a hashtag and either `reduced.lang` or `reduced.country` as its input parameters and creates a bar graph that visually displays the top 10 languages or countries in which the hashtag was used the most. Here are some examples:
-
+<br>
 The following command:
 ```
 $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
@@ -27,7 +27,7 @@ $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
 outputs:
 
 ### Number of Tweets Containing #coronavirus (Top 10 Languages)
-![#coronavirus by language]('#coronavirus_bar_graph_(language).png')
+<img src='#coronavirus_bar_graph_(language).png' width=100% />
 
 **Alternative Reduce:**
 
