@@ -19,7 +19,7 @@ The output of the map.py file is stored in the `outputs` folder, which contains 
 **Visualize:**
 
 Once the data has been consolidated into a single file, I was able to perform data visualizations using the `matplotlib` library. The `visualize.py` file takes in a hashtag and either `reduced.lang` or `reduced.country` as its input parameters and creates a bar graph that visually displays the top 10 languages or countries in which the hashtag was used the most. Here are some examples:
-<br>
+
 The following command:
 ```
 $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
@@ -28,6 +28,34 @@ outputs:
 
 ### Number of Tweets Containing #coronavirus (Top 10 Languages)
 <img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23coronavirus_bar_graph_(language).png />
+
+The following command:
+```
+$ ./src/visualize.py --input_path=reduced.country --key='#coronavirus'
+```
+outputs:
+
+### Number of Tweets Containing #coronavirus (Top 10 Countries)
+<img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23coronavirus_bar_graph_(country).png />
+
+The MapReduce procedure even works with hashtags in languages other than English. For example:
+
+The following command:
+```
+$ ./src/visualize.py --input_path=reduced.lang --key='#코로나바이러스'
+```
+outputs:
+
+### Number of Tweets Containing #코로나바이러스 (Top 10 Languages)
+<img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23코로나바이러스_bar_graph_(language).png />
+
+The following command:
+```
+$ ./src/visualize.py --input_path=reduced.country --key='#코로나바이러스'
+```
+
+### Number of Tweets Containing #코로나바이러스 (Top 10 Countries)
+<img src=https://github.com/Kevinl0378/twitter_coronavirus/blob/master/%23코로나바이러스_bar_graph_(country).png />
 
 **Alternative Reduce:**
 
