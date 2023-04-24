@@ -27,7 +27,7 @@ $ ./src/visualize.py --input_path=reduced.lang --key='#coronavirus'
 outputs:
 
 ### Number of Tweets Containing #coronavirus (Top 10 Languages)
-<img src='#coronavirus_bar_graph_(language).png' width=100% />
+<img src='#coronavirus_bar_graph_(language).png'/>
 
 **Alternative Reduce:**
 
